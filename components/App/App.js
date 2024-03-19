@@ -1,35 +1,92 @@
 import React from "react";
+import styled from "styled-components";
+import logo from "../../images/logo.svg";
 
 function App() {
   return (
     <>
-      <Header />
-      <Hero />
-      <SearchBar />
-      <Features />
-      <CallToAction />
-      <Footer />
+      <Container>
+        <NavBar />
+        <Hero />
+        <SearchBar />
+        <Features />
+        <CallToAction />
+        <Footer />
+      </Container>
     </>
   );
 }
 
-function Header() {
+const Container = styled.div`
+  max-width: 1440px;
+  margin: 0 auto;
+`;
+
+function NavBar() {
   return (
-    <p>
-      Features
-      <br />
-      Pricing
-      <br />
-      Resources
-      <br />
-      <br />
-      Login
-      <br />
-      Sign Up
-      <br />
-    </p>
+    <Header>
+      <Image src={logo} alt="" />
+      <Nav>
+        <List>
+          <ListItem>
+            <NavLink>Features</NavLink>
+          </ListItem>
+          <ListItem>
+            <NavLink>Pricing</NavLink>
+          </ListItem>
+          <ListItem>
+            <NavLink>Resources</NavLink>
+          </ListItem>
+        </List>
+      </Nav>
+      <NavLink>Login</NavLink>
+      <NavButton>Sign Up</NavButton>
+    </Header>
   );
 }
+
+const Header = styled.header`
+  margin: 48px auto 0;
+  max-width: 1108px;
+  display: flex;
+  align-items: center;
+`;
+
+const Image = styled.img`
+  margin-right: 45px;
+`;
+
+const Nav = styled.nav`
+  margin-right: auto;
+`;
+
+const List = styled.ul`
+  list-style: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 29px;
+`;
+
+const ListItem = styled.li``;
+
+const NavLink = styled.a`
+  text-decoration: none;
+  color: hsl(257, 7%, 63%);
+  font-weight: 700;
+  font-size: ${15 / 16}rem;
+`;
+
+const NavButton = styled.a`
+  display: block;
+  background: hsl(180, 66%, 49%);
+  color: hsl(0, 100%, 100%);
+  font-size: ${15 / 16}rem;
+  font-weight: 700;
+  padding: ${9 / 16}em ${24 / 16}em;
+  border-radius: 28px;
+  margin-left: 37px;
+`;
 
 function Hero() {
   return (
