@@ -18,7 +18,7 @@ function App() {
 }
 
 const Container = styled.div`
-  max-width: 1440px;
+  max-width: ${1440 / 16}rem;
   margin: 0 auto;
 `;
 
@@ -47,7 +47,8 @@ function NavBar() {
 
 const Header = styled.header`
   margin: 48px auto 0;
-  max-width: 1108px;
+  width: 90%;
+  max-width: ${1108 / 16}rem;
   display: flex;
   align-items: center;
 `;

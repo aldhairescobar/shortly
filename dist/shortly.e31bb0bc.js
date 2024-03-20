@@ -31168,14 +31168,14 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 function App() {
   return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(Container, null, /*#__PURE__*/_react.default.createElement(NavBar, null), /*#__PURE__*/_react.default.createElement(Hero, null), /*#__PURE__*/_react.default.createElement(SearchBar, null), /*#__PURE__*/_react.default.createElement(Features, null), /*#__PURE__*/_react.default.createElement(CallToAction, null), /*#__PURE__*/_react.default.createElement(Footer, null)));
 }
-var Container = _styledComponents.default.div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  max-width: 1440px;\n  margin: 0 auto;\n"])));
+var Container = _styledComponents.default.div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  max-width: ", "rem;\n  margin: 0 auto;\n"])), 1440 / 16);
 function NavBar() {
   return /*#__PURE__*/_react.default.createElement(Header, null, /*#__PURE__*/_react.default.createElement(Image, {
     src: _logo.default,
     alt: ""
   }), /*#__PURE__*/_react.default.createElement(Nav, null, /*#__PURE__*/_react.default.createElement(List, null, /*#__PURE__*/_react.default.createElement(ListItem, null, /*#__PURE__*/_react.default.createElement(NavLink, null, "Features")), /*#__PURE__*/_react.default.createElement(ListItem, null, /*#__PURE__*/_react.default.createElement(NavLink, null, "Pricing")), /*#__PURE__*/_react.default.createElement(ListItem, null, /*#__PURE__*/_react.default.createElement(NavLink, null, "Resources")))), /*#__PURE__*/_react.default.createElement(NavLink, null, "Login"), /*#__PURE__*/_react.default.createElement(NavButton, null, "Sign Up"));
 }
-var Header = _styledComponents.default.header(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n  margin: 48px auto 0;\n  max-width: 1108px;\n  display: flex;\n  align-items: center;\n"])));
+var Header = _styledComponents.default.header(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n  margin: 48px auto 0;\n  width: 90%;\n  max-width: ", "rem;\n  display: flex;\n  align-items: center;\n"])), 1108 / 16);
 var Image = _styledComponents.default.img(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n  margin-right: 45px;\n"])));
 var Nav = _styledComponents.default.nav(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["\n  margin-right: auto;\n"])));
 var List = _styledComponents.default.ul(_templateObject5 || (_templateObject5 = _taggedTemplateLiteral(["\n  list-style: none;\n  padding: 0;\n  display: flex;\n  align-items: center;\n  gap: 29px;\n"])));
