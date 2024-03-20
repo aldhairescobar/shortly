@@ -11,13 +11,17 @@ export const QUERIES = {
 };
 
 export const COLORS = {
+  /* Color palette Figma */
   cyan: "hsl(180, 66%, 49%)",
-  darkViolet: "hsl(257, 27%, 26%)",
+  lightGray: "hsl(225, 32%, 95%)",
+  grayishViolet: "hsl(257, 8%, 63%)",
+  darkViolet: "hsl(257, 26%, 33%)",
+  veryDarkViolet: "hsl(257, 27%, 26%)",
+  veryDarkBlue: "hsl(257, 11%, 21%)",
+
   red: "hsl(0, 87%, 67%)",
   gray: "hsl(0, 0%, 75%)",
-  grayishViolet: "hsl(257, 7%, 63%)",
-  veryDarkBlue: "hsl(255, 11%, 22%)",
-  veryDarkViolet: "hsl(260, 8%, 14%)",
+  white: "hsl(0, 100%, 100%)",
 };
 
 export const WEIGHTS = {

@@ -31152,7 +31152,41 @@ var vt = "__sc-".concat(f, "__");
 "production" !== "development" && "test" !== "development" && "undefined" != typeof window && (window[vt] || (window[vt] = 0), 1 === window[vt] && console.warn("It looks like there are several instances of 'styled-components' initialized in this application. This may cause dynamic styles to not render properly, errors during the rehydration process, a missing theme prop, and makes your application bigger without good reason.\n\nSee https://s-c.sh/2BAXzed for more info."), window[vt] += 1);
 },{"tslib":"node_modules/tslib/tslib.es6.js","@emotion/is-prop-valid":"node_modules/@emotion/is-prop-valid/dist/emotion-is-prop-valid.esm.js","react":"node_modules/react/index.js","shallowequal":"node_modules/shallowequal/index.js","stylis":"node_modules/stylis/dist/stylis.mjs","@emotion/unitless":"node_modules/@emotion/unitless/dist/emotion-unitless.esm.js","process":"node_modules/process/browser.js"}],"images/logo.svg":[function(require,module,exports) {
 module.exports = "/logo.236e4034.svg";
-},{}],"components/App/App.js":[function(require,module,exports) {
+},{}],"constants.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.WEIGHTS = exports.QUERIES = exports.COLORS = exports.BREAKPOINTS = void 0;
+var BREAKPOINTS = exports.BREAKPOINTS = {
+  phone: 600,
+  tablet: 950,
+  laptop: 1300
+};
+var QUERIES = exports.QUERIES = {
+  phoneAndSmaller: "(max-width: ".concat(BREAKPOINTS.phone / 16, "rem)"),
+  tabletAndSmaller: "(max-width: ".concat(BREAKPOINTS.tablet / 16, "rem)"),
+  laptopAndSmaller: "(max-width: ".concat(BREAKPOINTS.laptop / 16, "rem)")
+};
+var COLORS = exports.COLORS = {
+  /* Color palette Figma */
+  cyan: "hsl(180, 66%, 49%)",
+  lightGray: "hsl(225, 32%, 95%)",
+  grayishViolet: "hsl(257, 8%, 63%)",
+  darkViolet: "hsl(257, 26%, 33%)",
+  veryDarkViolet: "hsl(257, 27%, 26%)",
+  veryDarkBlue: "hsl(257, 11%, 21%)",
+  red: "hsl(0, 87%, 67%)",
+  gray: "hsl(0, 0%, 75%)",
+  white: "hsl(0, 100%, 100%)"
+};
+var WEIGHTS = exports.WEIGHTS = {
+  regular: 400,
+  medium: 500,
+  bold: 700
+};
+},{}],"components/NavBar/NavBar.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -31162,29 +31196,100 @@ exports.default = void 0;
 var _react = _interopRequireDefault(require("react"));
 var _styledComponents = _interopRequireDefault(require("styled-components"));
 var _logo = _interopRequireDefault(require("../../images/logo.svg"));
-var _templateObject, _templateObject2, _templateObject3, _templateObject4, _templateObject5, _templateObject6, _templateObject7, _templateObject8;
+var _constants = require("../../constants");
+var _templateObject, _templateObject2, _templateObject3, _templateObject4, _templateObject5, _templateObject6, _templateObject7;
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
-function App() {
-  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(Container, null, /*#__PURE__*/_react.default.createElement(NavBar, null), /*#__PURE__*/_react.default.createElement(Hero, null), /*#__PURE__*/_react.default.createElement(SearchBar, null), /*#__PURE__*/_react.default.createElement(Features, null), /*#__PURE__*/_react.default.createElement(CallToAction, null), /*#__PURE__*/_react.default.createElement(Footer, null)));
-}
-var Container = _styledComponents.default.div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  max-width: ", "rem;\n  margin: 0 auto;\n"])), 1440 / 16);
 function NavBar() {
   return /*#__PURE__*/_react.default.createElement(Header, null, /*#__PURE__*/_react.default.createElement(Image, {
     src: _logo.default,
     alt: ""
   }), /*#__PURE__*/_react.default.createElement(Nav, null, /*#__PURE__*/_react.default.createElement(List, null, /*#__PURE__*/_react.default.createElement(ListItem, null, /*#__PURE__*/_react.default.createElement(NavLink, null, "Features")), /*#__PURE__*/_react.default.createElement(ListItem, null, /*#__PURE__*/_react.default.createElement(NavLink, null, "Pricing")), /*#__PURE__*/_react.default.createElement(ListItem, null, /*#__PURE__*/_react.default.createElement(NavLink, null, "Resources")))), /*#__PURE__*/_react.default.createElement(NavLink, null, "Login"), /*#__PURE__*/_react.default.createElement(NavButton, null, "Sign Up"));
 }
-var Header = _styledComponents.default.header(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n  margin: 48px auto 0;\n  width: 90%;\n  max-width: ", "rem;\n  display: flex;\n  align-items: center;\n"])), 1108 / 16);
-var Image = _styledComponents.default.img(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n  margin-right: 45px;\n"])));
-var Nav = _styledComponents.default.nav(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["\n  margin-right: auto;\n"])));
-var List = _styledComponents.default.ul(_templateObject5 || (_templateObject5 = _taggedTemplateLiteral(["\n  list-style: none;\n  padding: 0;\n  display: flex;\n  align-items: center;\n  gap: 29px;\n"])));
-var ListItem = _styledComponents.default.li(_templateObject6 || (_templateObject6 = _taggedTemplateLiteral([""])));
-var NavLink = _styledComponents.default.a(_templateObject7 || (_templateObject7 = _taggedTemplateLiteral(["\n  text-decoration: none;\n  color: hsl(257, 7%, 63%);\n  font-weight: 700;\n  font-size: ", "rem;\n"])), 15 / 16);
-var NavButton = _styledComponents.default.a(_templateObject8 || (_templateObject8 = _taggedTemplateLiteral(["\n  display: block;\n  background: hsl(180, 66%, 49%);\n  color: hsl(0, 100%, 100%);\n  font-size: ", "rem;\n  font-weight: 700;\n  padding: ", "em ", "em;\n  border-radius: 28px;\n  margin-left: 37px;\n"])), 15 / 16, 9 / 16, 24 / 16);
+var Header = _styledComponents.default.header(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  margin: 48px auto 0;\n  width: 90%;\n  max-width: ", "rem;\n  display: flex;\n  align-items: center;\n"])), 1108 / 16);
+var Image = _styledComponents.default.img(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n  margin-right: 45px;\n  width: 120px;\n"])));
+var Nav = _styledComponents.default.nav(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n  margin-right: auto;\n"])));
+var List = _styledComponents.default.ul(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["\n  list-style: none;\n  padding: 0;\n  display: flex;\n  align-items: center;\n  gap: 29px;\n"])));
+var ListItem = _styledComponents.default.li(_templateObject5 || (_templateObject5 = _taggedTemplateLiteral([""])));
+var NavLink = _styledComponents.default.a(_templateObject6 || (_templateObject6 = _taggedTemplateLiteral(["\n  text-decoration: none;\n  color: ", ";\n  font-weight: ", ";\n  font-size: ", "rem;\n"])), _constants.COLORS.grayishViolet, _constants.WEIGHTS.bold, 15 / 16);
+var NavButton = _styledComponents.default.a(_templateObject7 || (_templateObject7 = _taggedTemplateLiteral(["\n  display: block;\n  background: ", ";\n  color: ", ";\n  font-size: ", "rem;\n  font-weight: ", ";\n  padding: ", "rem ", "rem;\n  border-radius: 28px;\n  margin-left: 37px;\n"])), _constants.COLORS.cyan, _constants.COLORS.white, 15 / 16, _constants.WEIGHTS.bold, 9 / 16, 24 / 16);
+var _default = exports.default = NavBar;
+},{"react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js","../../images/logo.svg":"images/logo.svg","../../constants":"constants.js"}],"components/NavBar/index.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+Object.defineProperty(exports, "default", {
+  enumerable: true,
+  get: function () {
+    return _NavBar.default;
+  }
+});
+var _NavBar = _interopRequireDefault(require("./NavBar"));
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+},{"./NavBar":"components/NavBar/NavBar.js"}],"images/illustration-working.svg":[function(require,module,exports) {
+module.exports = "/illustration-working.18d1e30c.svg";
+},{}],"components/Hero/Hero.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _react = _interopRequireDefault(require("react"));
+var _styledComponents = _interopRequireDefault(require("styled-components"));
+var _illustrationWorking = _interopRequireDefault(require("../../images/illustration-working.svg"));
+var _constants = require("../../constants");
+var _templateObject, _templateObject2, _templateObject3, _templateObject4, _templateObject5, _templateObject6;
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 function Hero() {
-  return /*#__PURE__*/_react.default.createElement("p", null, "More than just shorter links", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("br", null), "Build your brand\u2019s recognition and get detailed insights ", /*#__PURE__*/_react.default.createElement("br", null), "on how your links are performing.", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("br", null), "Get Started");
+  return /*#__PURE__*/_react.default.createElement(Wrapper, null, /*#__PURE__*/_react.default.createElement(Intro, null, /*#__PURE__*/_react.default.createElement(Title, null, "More than just shorter links"), /*#__PURE__*/_react.default.createElement(Description, null, "Build your brand\u2019s recognition and get detailed insights on how your links are performing."), /*#__PURE__*/_react.default.createElement(HeroButton, null, "Get Started")), /*#__PURE__*/_react.default.createElement(Image, {
+    src: _illustrationWorking.default,
+    alt: ""
+  }));
 }
+var Wrapper = _styledComponents.default.div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  margin: 78px auto 0;\n  width: 90%;\n  max-width: ", "rem;\n  display: flex;\n  align-items: center;\n"])), 1108 / 16);
+var Intro = _styledComponents.default.div(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n  display: flex;\n  flex-direction: column;\n  align-items: flex-start;\n"])));
+var Title = _styledComponents.default.h1(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n  font-size: ", "rem;\n  line-height: ", "rem;\n  letter-spacing: -2px;\n  font-weight: ", ";\n  color: ", ";\n  margin-bottom: ", "rem;\n"])), 80 / 16, 90 / 16, _constants.WEIGHTS.bold, _constants.COLORS.veryDarkBlue, 6 / 16);
+var Description = _styledComponents.default.p(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["\n  max-width: ", "rem;\n  font-size: ", "rem;\n  line-height: ", "rem;\n  letter-spacing: 0.15px;\n  font-weight: ", ";\n  color: ", ";\n  margin-bottom: ", "rem;\n"])), 540 / 16, 22 / 16, 36 / 16, _constants.WEIGHTS.medium, _constants.COLORS.grayishViolet, 38 / 16);
+var HeroButton = _styledComponents.default.a(_templateObject5 || (_templateObject5 = _taggedTemplateLiteral(["\n  display: block;\n  background: ", ";\n  color: ", ";\n  font-size: ", "rem;\n  font-weight: ", ";\n  padding: ", "rem ", "rem;\n  border-radius: 28px;\n"])), _constants.COLORS.cyan, _constants.COLORS.white, 20 / 16, _constants.WEIGHTS.bold, 14 / 16, 40 / 16);
+var Image = _styledComponents.default.img(_templateObject6 || (_templateObject6 = _taggedTemplateLiteral(["\n  width: 733px;\n  position: relative;\n  margin-right: -288px;\n"])));
+var _default = exports.default = Hero;
+},{"react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js","../../images/illustration-working.svg":"images/illustration-working.svg","../../constants":"constants.js"}],"components/Hero/index.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+Object.defineProperty(exports, "default", {
+  enumerable: true,
+  get: function () {
+    return _Hero.default;
+  }
+});
+var _Hero = _interopRequireDefault(require("./Hero"));
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+},{"./Hero":"components/Hero/Hero.js"}],"components/App/App.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _react = _interopRequireDefault(require("react"));
+var _styledComponents = _interopRequireDefault(require("styled-components"));
+var _NavBar = _interopRequireDefault(require("../NavBar"));
+var _Hero = _interopRequireDefault(require("../Hero"));
+var _constants = require("../../constants");
+var _templateObject;
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+function App() {
+  return /*#__PURE__*/_react.default.createElement(Container, null, /*#__PURE__*/_react.default.createElement(_NavBar.default, null), /*#__PURE__*/_react.default.createElement("main", null, /*#__PURE__*/_react.default.createElement(_Hero.default, null), /*#__PURE__*/_react.default.createElement(SearchBar, null), /*#__PURE__*/_react.default.createElement(Features, null), /*#__PURE__*/_react.default.createElement(CallToAction, null)), /*#__PURE__*/_react.default.createElement(Footer, null));
+}
+var Container = _styledComponents.default.div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  max-width: ", "rem;\n  margin: 0 auto;\n  overflow: hidden;\n"])), 1440 / 16);
 function SearchBar() {
   return /*#__PURE__*/_react.default.createElement("p", null, "Shorten a link here...", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("br", null), "Shorten It!");
 }
@@ -31198,7 +31303,7 @@ function Footer() {
   return /*#__PURE__*/_react.default.createElement("p", null, "Features", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("br", null), "Link Shortening", /*#__PURE__*/_react.default.createElement("br", null), "Branded Links", /*#__PURE__*/_react.default.createElement("br", null), "Analytics", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("br", null), "Resources", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("br", null), "Blog", /*#__PURE__*/_react.default.createElement("br", null), "Developers", /*#__PURE__*/_react.default.createElement("br", null), "Support", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("br", null), "Company", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("br", null), "About", /*#__PURE__*/_react.default.createElement("br", null), "Our Team", /*#__PURE__*/_react.default.createElement("br", null), "Careers", /*#__PURE__*/_react.default.createElement("br", null), "Contact", /*#__PURE__*/_react.default.createElement("br", null));
 }
 var _default = exports.default = App;
-},{"react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js","../../images/logo.svg":"images/logo.svg"}],"components/App/index.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js","../NavBar":"components/NavBar/index.js","../Hero":"components/Hero/index.js","../../constants":"constants.js"}],"components/App/index.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -31246,7 +31351,7 @@ var _client = _interopRequireDefault(require("react-dom/client"));
 var _App = _interopRequireDefault(require("./components/App"));
 var _GlobalStyles = _interopRequireDefault(require("./components/GlobalStyles"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-_client.default.createRoot(document.getElementById("root")).render( /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_App.default, null), /*#__PURE__*/_react.default.createElement(_GlobalStyles.default, null)));
+_client.default.createRoot(document.getElementById("root")).render( /*#__PURE__*/_react.default.createElement(_react.default.StrictMode, null, /*#__PURE__*/_react.default.createElement(_App.default, null), /*#__PURE__*/_react.default.createElement(_GlobalStyles.default, null)));
 },{"react":"node_modules/react/index.js","react-dom/client":"node_modules/react-dom/client.js","./components/App":"components/App/index.js","./components/GlobalStyles":"components/GlobalStyles/index.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -31272,7 +31377,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55473" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52654" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

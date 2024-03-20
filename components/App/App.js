@@ -1,108 +1,29 @@
 import React from "react";
 import styled from "styled-components";
-import logo from "../../images/logo.svg";
+import NavBar from "../NavBar";
+import Hero from "../Hero";
+import { COLORS, WEIGHTS } from "../../constants";
 
 function App() {
   return (
-    <>
-      <Container>
-        <NavBar />
+    <Container>
+      <NavBar />
+      <main>
         <Hero />
         <SearchBar />
         <Features />
         <CallToAction />
-        <Footer />
-      </Container>
-    </>
+      </main>
+      <Footer />
+    </Container>
   );
 }
 
 const Container = styled.div`
   max-width: ${1440 / 16}rem;
   margin: 0 auto;
+  overflow: hidden;
 `;
-
-function NavBar() {
-  return (
-    <Header>
-      <Image src={logo} alt="" />
-      <Nav>
-        <List>
-          <ListItem>
-            <NavLink>Features</NavLink>
-          </ListItem>
-          <ListItem>
-            <NavLink>Pricing</NavLink>
-          </ListItem>
-          <ListItem>
-            <NavLink>Resources</NavLink>
-          </ListItem>
-        </List>
-      </Nav>
-      <NavLink>Login</NavLink>
-      <NavButton>Sign Up</NavButton>
-    </Header>
-  );
-}
-
-const Header = styled.header`
-  margin: 48px auto 0;
-  width: 90%;
-  max-width: ${1108 / 16}rem;
-  display: flex;
-  align-items: center;
-`;
-
-const Image = styled.img`
-  margin-right: 45px;
-`;
-
-const Nav = styled.nav`
-  margin-right: auto;
-`;
-
-const List = styled.ul`
-  list-style: none;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  gap: 29px;
-`;
-
-const ListItem = styled.li``;
-
-const NavLink = styled.a`
-  text-decoration: none;
-  color: hsl(257, 7%, 63%);
-  font-weight: 700;
-  font-size: ${15 / 16}rem;
-`;
-
-const NavButton = styled.a`
-  display: block;
-  background: hsl(180, 66%, 49%);
-  color: hsl(0, 100%, 100%);
-  font-size: ${15 / 16}rem;
-  font-weight: 700;
-  padding: ${9 / 16}em ${24 / 16}em;
-  border-radius: 28px;
-  margin-left: 37px;
-`;
-
-function Hero() {
-  return (
-    <p>
-      More than just shorter links
-      <br />
-      <br />
-      Build your brand’s recognition and get detailed insights <br />
-      on how your links are performing.
-      <br />
-      <br />
-      Get Started
-    </p>
-  );
-}
 
 function SearchBar() {
   return (
