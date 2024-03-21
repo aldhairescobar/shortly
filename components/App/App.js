@@ -2,7 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import NavBar from "../NavBar";
 import Hero from "../Hero";
+import Footer from "../Footer";
 import { COLORS, WEIGHTS } from "../../constants";
+import Logo from "../ShortlyLogo";
 
 function App() {
   return (
@@ -80,44 +82,6 @@ function CallToAction() {
       <br />
       <br />
       Get Started
-    </p>
-  );
-}
-
-function Footer() {
-  return (
-    <p>
-      Features
-      <br />
-      <br />
-      Link Shortening
-      <br />
-      Branded Links
-      <br />
-      Analytics
-      <br />
-      <br />
-      Resources
-      <br />
-      <br />
-      Blog
-      <br />
-      Developers
-      <br />
-      Support
-      <br />
-      <br />
-      Company
-      <br />
-      <br />
-      About
-      <br />
-      Our Team
-      <br />
-      Careers
-      <br />
-      Contact
-      <br />
     </p>
   );
 }

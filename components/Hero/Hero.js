@@ -22,7 +22,7 @@ function Hero() {
 const Wrapper = styled.div`
   margin: 78px auto 0;
   width: 90%;
-  max-width: ${1108 / 16}rem;
+  max-width: ${1110 / 16}rem;
   display: flex;
   align-items: center;
 `;

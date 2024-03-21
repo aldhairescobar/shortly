@@ -15,9 +15,11 @@ export const COLORS = {
   cyan: "hsl(180, 66%, 49%)",
   lightGray: "hsl(225, 32%, 95%)",
   grayishViolet: "hsl(257, 8%, 63%)",
+  grayishVioletBackground: "hsl(257, 8%, 14%)",
   darkViolet: "hsl(257, 26%, 33%)",
   veryDarkViolet: "hsl(257, 27%, 26%)",
   veryDarkBlue: "hsl(257, 11%, 21%)",
+  veryDarkVioletLogo: "hsl(255, 11%, 22%)",
 
   red: "hsl(0, 87%, 67%)",
   gray: "hsl(0, 0%, 75%)",

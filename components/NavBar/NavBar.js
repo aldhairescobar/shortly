@@ -1,12 +1,14 @@
 import React from "react";
 import styled from "styled-components";
-import logo from "../../images/logo.svg";
+import Logo from "../ShortlyLogo";
 import { COLORS, WEIGHTS } from "../../constants";
 
 function NavBar() {
   return (
     <Header>
-      <Image src={logo} alt="" />
+      <LinkHome>
+        <Logo fill={COLORS.veryDarkVioletLogo} />
+      </LinkHome>
       <Nav>
         <List>
           <ListItem>
@@ -29,12 +31,13 @@ function NavBar() {
 const Header = styled.header`
   margin: 48px auto 0;
   width: 90%;
-  max-width: ${1108 / 16}rem;
+  max-width: ${1110 / 16}rem;
   display: flex;
   align-items: center;
 `;
 
-const Image = styled.img`
+const LinkHome = styled.a`
+  display: block;
   margin-right: 45px;
   width: 120px;
 `;

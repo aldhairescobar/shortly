@@ -31150,9 +31150,42 @@ var mt = exports.ServerStyleSheet = function () {
 "production" !== "development" && "undefined" != typeof navigator && "ReactNative" === navigator.product && console.warn("It looks like you've imported 'styled-components' on React Native.\nPerhaps you're looking to import 'styled-components/native'?\nRead more about this at https://www.styled-components.com/docs/basics#react-native");
 var vt = "__sc-".concat(f, "__");
 "production" !== "development" && "test" !== "development" && "undefined" != typeof window && (window[vt] || (window[vt] = 0), 1 === window[vt] && console.warn("It looks like there are several instances of 'styled-components' initialized in this application. This may cause dynamic styles to not render properly, errors during the rehydration process, a missing theme prop, and makes your application bigger without good reason.\n\nSee https://s-c.sh/2BAXzed for more info."), window[vt] += 1);
-},{"tslib":"node_modules/tslib/tslib.es6.js","@emotion/is-prop-valid":"node_modules/@emotion/is-prop-valid/dist/emotion-is-prop-valid.esm.js","react":"node_modules/react/index.js","shallowequal":"node_modules/shallowequal/index.js","stylis":"node_modules/stylis/dist/stylis.mjs","@emotion/unitless":"node_modules/@emotion/unitless/dist/emotion-unitless.esm.js","process":"node_modules/process/browser.js"}],"images/logo.svg":[function(require,module,exports) {
-module.exports = "/logo.236e4034.svg";
-},{}],"constants.js":[function(require,module,exports) {
+},{"tslib":"node_modules/tslib/tslib.es6.js","@emotion/is-prop-valid":"node_modules/@emotion/is-prop-valid/dist/emotion-is-prop-valid.esm.js","react":"node_modules/react/index.js","shallowequal":"node_modules/shallowequal/index.js","stylis":"node_modules/stylis/dist/stylis.mjs","@emotion/unitless":"node_modules/@emotion/unitless/dist/emotion-unitless.esm.js","process":"node_modules/process/browser.js"}],"components/ShortlyLogo/ShortlyLogo.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _react = _interopRequireDefault(require("react"));
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function ShortlyLogo(_ref) {
+  var fill = _ref.fill;
+  return /*#__PURE__*/_react.default.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: "121",
+    height: "33"
+  }, /*#__PURE__*/_react.default.createElement("path", {
+    fill: fill,
+    d: "M16.715 7.932c-.068-.09-.306-.26-.714-.51s-.918-.51-1.53-.782-1.281-.51-2.006-.714a8.005 8.005 0 00-2.176-.306c-1.995 0-2.992.669-2.992 2.006 0 .408.107.748.323 1.02.215.272.532.516.952.731.419.215.946.414 1.58.595l1.406.393.805.219c1.156.317 2.198.663 3.128 1.037.929.374 1.717.839 2.363 1.394a5.647 5.647 0 011.496 2.023c.35.793.527 1.745.527 2.856 0 1.36-.255 2.51-.765 3.451-.51.94-1.185 1.7-2.023 2.278-.84.578-1.802.997-2.89 1.258-1.088.26-2.21.391-3.366.391a19.68 19.68 0 01-5.44-.799c-.884-.26-1.74-.572-2.567-.935A14.358 14.358 0 01.53 22.28l2.448-4.862c.09.113.385.329.884.646.498.317 1.116.635 1.853.952.736.317 1.558.6 2.465.85.906.25 1.824.374 2.754.374 1.972 0 2.958-.6 2.958-1.802 0-.453-.148-.827-.442-1.122-.295-.295-.703-.561-1.224-.799a12.455 12.455 0 00-1.504-.56l-1.702-.495-.976-.288c-1.111-.34-2.074-.708-2.89-1.105-.816-.397-1.49-.856-2.023-1.377a5.003 5.003 0 01-1.19-1.802c-.261-.68-.391-1.473-.391-2.38 0-1.27.238-2.391.714-3.366a7.266 7.266 0 011.938-2.465 8.435 8.435 0 012.839-1.513c1.076-.34 2.215-.51 3.417-.51.838 0 1.666.08 2.482.238.816.159 1.598.363 2.346.612.748.25 1.445.533 2.09.85.647.317 1.242.635 1.786.952l-2.448 4.624zM40.139 25h-5.44V14.97c0-1.156-.227-2.006-.68-2.55-.454-.544-1.077-.816-1.87-.816-.318 0-.663.074-1.037.221a4.173 4.173 0 00-1.088.646 5.827 5.827 0 00-.97 1.003 4.4 4.4 0 00-.68 1.292V25h-5.44V.18h5.44v9.962a6.786 6.786 0 012.602-2.465c1.076-.578 2.26-.867 3.553-.867 1.201 0 2.17.21 2.907.629.736.42 1.303.952 1.7 1.598.396.646.663 1.371.799 2.176.136.805.204 1.592.204 2.363V25zm12.34.34c-1.519 0-2.873-.25-4.063-.748-1.19-.499-2.193-1.173-3.01-2.023a8.54 8.54 0 01-1.852-2.958 9.97 9.97 0 01-.63-3.519c0-1.224.21-2.397.63-3.519a8.54 8.54 0 011.853-2.958c.816-.85 1.819-1.53 3.009-2.04s2.544-.765 4.063-.765c1.519 0 2.867.255 4.046.765 1.179.51 2.176 1.19 2.992 2.04a8.754 8.754 0 011.87 2.958 9.736 9.736 0 01.646 3.519 9.97 9.97 0 01-.63 3.519 8.54 8.54 0 01-1.852 2.958c-.816.85-1.82 1.524-3.01 2.023-1.19.499-2.543.748-4.062.748zM48.5 16.092c0 1.405.374 2.533 1.122 3.383.748.85 1.7 1.275 2.856 1.275a3.59 3.59 0 001.564-.34c.476-.227.89-.544 1.24-.952a4.57 4.57 0 00.834-1.479 5.632 5.632 0 00.306-1.887c0-1.405-.374-2.533-1.122-3.383-.748-.85-1.689-1.275-2.822-1.275a3.702 3.702 0 00-2.84 1.292 4.57 4.57 0 00-.832 1.479 5.632 5.632 0 00-.306 1.887zm27.776-4.284c-1.315.023-2.505.238-3.57.646-1.065.408-1.836 1.02-2.312 1.836V25h-5.44V7.15h4.998v3.604c.612-1.201 1.4-2.142 2.363-2.822.963-.68 1.989-1.031 3.077-1.054h.544c.113 0 .227.011.34.034v4.896zm14.074 12.24a21.71 21.71 0 01-2.567.884c-.963.272-1.932.408-2.907.408-.68 0-1.32-.085-1.92-.255a4.286 4.286 0 01-1.582-.816c-.453-.374-.81-.867-1.07-1.479-.262-.612-.392-1.349-.392-2.21v-9.316h-2.278V7.15h2.278V1.472h5.44V7.15h3.638v4.114h-3.638v7.446c0 .59.147 1.014.442 1.275.295.26.669.391 1.122.391.408 0 .827-.068 1.258-.204.43-.136.805-.283 1.122-.442l1.054 4.318zM92.627.18h5.44v18.462c0 1.36.578 2.04 1.734 2.04.272 0 .572-.04.901-.119.329-.08.63-.198.901-.357l.714 4.08c-.68.317-1.462.567-2.346.748-.884.181-1.711.272-2.482.272-1.564 0-2.765-.408-3.604-1.224-.839-.816-1.258-1.995-1.258-3.536V.18zm11.456 27.506c.454.159.879.272 1.275.34a6.4 6.4 0 001.071.102c.658 0 1.168-.227 1.53-.68.363-.453.692-1.27.986-2.448l-6.8-17.85h5.61l4.148 13.192 3.57-13.192h5.1l-6.8 20.74a7.106 7.106 0 01-2.55 3.587c-1.224.918-2.674 1.377-4.352 1.377a8.17 8.17 0 01-1.377-.119 7.516 7.516 0 01-1.41-.391v-4.658z"
+  }));
+}
+var _default = exports.default = ShortlyLogo;
+},{"react":"node_modules/react/index.js"}],"components/ShortlyLogo/index.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+Object.defineProperty(exports, "default", {
+  enumerable: true,
+  get: function () {
+    return _ShortlyLogo.default;
+  }
+});
+var _ShortlyLogo = _interopRequireDefault(require("./ShortlyLogo"));
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+},{"./ShortlyLogo":"components/ShortlyLogo/ShortlyLogo.js"}],"constants.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -31174,9 +31207,11 @@ var COLORS = exports.COLORS = {
   cyan: "hsl(180, 66%, 49%)",
   lightGray: "hsl(225, 32%, 95%)",
   grayishViolet: "hsl(257, 8%, 63%)",
+  grayishVioletBackground: "hsl(257, 8%, 14%)",
   darkViolet: "hsl(257, 26%, 33%)",
   veryDarkViolet: "hsl(257, 27%, 26%)",
   veryDarkBlue: "hsl(257, 11%, 21%)",
+  veryDarkVioletLogo: "hsl(255, 11%, 22%)",
   red: "hsl(0, 87%, 67%)",
   gray: "hsl(0, 0%, 75%)",
   white: "hsl(0, 100%, 100%)"
@@ -31195,26 +31230,25 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 var _react = _interopRequireDefault(require("react"));
 var _styledComponents = _interopRequireDefault(require("styled-components"));
-var _logo = _interopRequireDefault(require("../../images/logo.svg"));
+var _ShortlyLogo = _interopRequireDefault(require("../ShortlyLogo"));
 var _constants = require("../../constants");
 var _templateObject, _templateObject2, _templateObject3, _templateObject4, _templateObject5, _templateObject6, _templateObject7;
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 function NavBar() {
-  return /*#__PURE__*/_react.default.createElement(Header, null, /*#__PURE__*/_react.default.createElement(Image, {
-    src: _logo.default,
-    alt: ""
-  }), /*#__PURE__*/_react.default.createElement(Nav, null, /*#__PURE__*/_react.default.createElement(List, null, /*#__PURE__*/_react.default.createElement(ListItem, null, /*#__PURE__*/_react.default.createElement(NavLink, null, "Features")), /*#__PURE__*/_react.default.createElement(ListItem, null, /*#__PURE__*/_react.default.createElement(NavLink, null, "Pricing")), /*#__PURE__*/_react.default.createElement(ListItem, null, /*#__PURE__*/_react.default.createElement(NavLink, null, "Resources")))), /*#__PURE__*/_react.default.createElement(NavLink, null, "Login"), /*#__PURE__*/_react.default.createElement(NavButton, null, "Sign Up"));
+  return /*#__PURE__*/_react.default.createElement(Header, null, /*#__PURE__*/_react.default.createElement(LinkHome, null, /*#__PURE__*/_react.default.createElement(_ShortlyLogo.default, {
+    fill: _constants.COLORS.veryDarkVioletLogo
+  })), /*#__PURE__*/_react.default.createElement(Nav, null, /*#__PURE__*/_react.default.createElement(List, null, /*#__PURE__*/_react.default.createElement(ListItem, null, /*#__PURE__*/_react.default.createElement(NavLink, null, "Features")), /*#__PURE__*/_react.default.createElement(ListItem, null, /*#__PURE__*/_react.default.createElement(NavLink, null, "Pricing")), /*#__PURE__*/_react.default.createElement(ListItem, null, /*#__PURE__*/_react.default.createElement(NavLink, null, "Resources")))), /*#__PURE__*/_react.default.createElement(NavLink, null, "Login"), /*#__PURE__*/_react.default.createElement(NavButton, null, "Sign Up"));
 }
-var Header = _styledComponents.default.header(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  margin: 48px auto 0;\n  width: 90%;\n  max-width: ", "rem;\n  display: flex;\n  align-items: center;\n"])), 1108 / 16);
-var Image = _styledComponents.default.img(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n  margin-right: 45px;\n  width: 120px;\n"])));
+var Header = _styledComponents.default.header(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  margin: 48px auto 0;\n  width: 90%;\n  max-width: ", "rem;\n  display: flex;\n  align-items: center;\n"])), 1110 / 16);
+var LinkHome = _styledComponents.default.a(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n  display: block;\n  margin-right: 45px;\n  width: 120px;\n"])));
 var Nav = _styledComponents.default.nav(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n  margin-right: auto;\n"])));
 var List = _styledComponents.default.ul(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["\n  list-style: none;\n  padding: 0;\n  display: flex;\n  align-items: center;\n  gap: 29px;\n"])));
 var ListItem = _styledComponents.default.li(_templateObject5 || (_templateObject5 = _taggedTemplateLiteral([""])));
 var NavLink = _styledComponents.default.a(_templateObject6 || (_templateObject6 = _taggedTemplateLiteral(["\n  text-decoration: none;\n  color: ", ";\n  font-weight: ", ";\n  font-size: ", "rem;\n"])), _constants.COLORS.grayishViolet, _constants.WEIGHTS.bold, 15 / 16);
 var NavButton = _styledComponents.default.a(_templateObject7 || (_templateObject7 = _taggedTemplateLiteral(["\n  display: block;\n  background: ", ";\n  color: ", ";\n  font-size: ", "rem;\n  font-weight: ", ";\n  padding: ", "rem ", "rem;\n  border-radius: 28px;\n  margin-left: 37px;\n"])), _constants.COLORS.cyan, _constants.COLORS.white, 15 / 16, _constants.WEIGHTS.bold, 9 / 16, 24 / 16);
 var _default = exports.default = NavBar;
-},{"react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js","../../images/logo.svg":"images/logo.svg","../../constants":"constants.js"}],"components/NavBar/index.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js","../ShortlyLogo":"components/ShortlyLogo/index.js","../../constants":"constants.js"}],"components/NavBar/index.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -31250,7 +31284,7 @@ function Hero() {
     alt: ""
   }));
 }
-var Wrapper = _styledComponents.default.div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  margin: 78px auto 0;\n  width: 90%;\n  max-width: ", "rem;\n  display: flex;\n  align-items: center;\n"])), 1108 / 16);
+var Wrapper = _styledComponents.default.div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  margin: 78px auto 0;\n  width: 90%;\n  max-width: ", "rem;\n  display: flex;\n  align-items: center;\n"])), 1110 / 16);
 var Intro = _styledComponents.default.div(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n  display: flex;\n  flex-direction: column;\n  align-items: flex-start;\n"])));
 var Title = _styledComponents.default.h1(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n  font-size: ", "rem;\n  line-height: ", "rem;\n  letter-spacing: -2px;\n  font-weight: ", ";\n  color: ", ";\n  margin-bottom: ", "rem;\n"])), 80 / 16, 90 / 16, _constants.WEIGHTS.bold, _constants.COLORS.veryDarkBlue, 6 / 16);
 var Description = _styledComponents.default.p(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["\n  max-width: ", "rem;\n  font-size: ", "rem;\n  line-height: ", "rem;\n  letter-spacing: 0.15px;\n  font-weight: ", ";\n  color: ", ";\n  margin-bottom: ", "rem;\n"])), 540 / 16, 22 / 16, 36 / 16, _constants.WEIGHTS.medium, _constants.COLORS.grayishViolet, 38 / 16);
@@ -31271,7 +31305,74 @@ Object.defineProperty(exports, "default", {
 });
 var _Hero = _interopRequireDefault(require("./Hero"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./Hero":"components/Hero/Hero.js"}],"components/App/App.js":[function(require,module,exports) {
+},{"./Hero":"components/Hero/Hero.js"}],"images/icon-instagram.svg":[function(require,module,exports) {
+module.exports = "/icon-instagram.55128b72.svg";
+},{}],"images/icon-pinterest.svg":[function(require,module,exports) {
+module.exports = "/icon-pinterest.6b47e241.svg";
+},{}],"images/icon-twitter.svg":[function(require,module,exports) {
+module.exports = "/icon-twitter.9dcd00ee.svg";
+},{}],"images/icon-facebook.svg":[function(require,module,exports) {
+module.exports = "/icon-facebook.db88fd38.svg";
+},{}],"components/Footer/Footer.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _react = _interopRequireDefault(require("react"));
+var _styledComponents = _interopRequireDefault(require("styled-components"));
+var _constants = require("../../constants");
+var _ShortlyLogo = _interopRequireDefault(require("../ShortlyLogo"));
+var _iconInstagram = _interopRequireDefault(require("../../images/icon-instagram.svg"));
+var _iconPinterest = _interopRequireDefault(require("../../images/icon-pinterest.svg"));
+var _iconTwitter = _interopRequireDefault(require("../../images/icon-twitter.svg"));
+var _iconFacebook = _interopRequireDefault(require("../../images/icon-facebook.svg"));
+var _templateObject, _templateObject2, _templateObject3, _templateObject4, _templateObject5, _templateObject6, _templateObject7, _templateObject8, _templateObject9, _templateObject10, _templateObject11, _templateObject12, _templateObject13;
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+function Footer() {
+  return /*#__PURE__*/_react.default.createElement(FooterContainer, null, /*#__PURE__*/_react.default.createElement(Wrapper, null, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(LinkHome, null, /*#__PURE__*/_react.default.createElement(_ShortlyLogo.default, {
+    fill: _constants.COLORS.white
+  }))), /*#__PURE__*/_react.default.createElement(LinksContainer, null, /*#__PURE__*/_react.default.createElement(LinkCol, null, /*#__PURE__*/_react.default.createElement(Title, null, "Features"), /*#__PURE__*/_react.default.createElement(LinksNav, null, /*#__PURE__*/_react.default.createElement(LinksList, null, /*#__PURE__*/_react.default.createElement(LinkItem, null, /*#__PURE__*/_react.default.createElement(Link, null, "Link Shortening")), /*#__PURE__*/_react.default.createElement(LinkItem, null, /*#__PURE__*/_react.default.createElement(Link, null, "Branded Links")), /*#__PURE__*/_react.default.createElement(LinkItem, null, /*#__PURE__*/_react.default.createElement(Link, null, "Analytics"))))), /*#__PURE__*/_react.default.createElement(LinkCol, null, /*#__PURE__*/_react.default.createElement(Title, null, "Resources"), /*#__PURE__*/_react.default.createElement(LinksNav, null, /*#__PURE__*/_react.default.createElement(LinksList, null, /*#__PURE__*/_react.default.createElement(LinkItem, null, /*#__PURE__*/_react.default.createElement(Link, null, "Blog")), /*#__PURE__*/_react.default.createElement(LinkItem, null, /*#__PURE__*/_react.default.createElement(Link, null, "Developers")), /*#__PURE__*/_react.default.createElement(LinkItem, null, /*#__PURE__*/_react.default.createElement(Link, null, "Support"))))), /*#__PURE__*/_react.default.createElement(LinkCol, null, /*#__PURE__*/_react.default.createElement(Title, null, "Company"), /*#__PURE__*/_react.default.createElement(LinksNav, null, /*#__PURE__*/_react.default.createElement(LinksList, null, /*#__PURE__*/_react.default.createElement(LinkItem, null, /*#__PURE__*/_react.default.createElement(Link, null, "About")), /*#__PURE__*/_react.default.createElement(LinkItem, null, /*#__PURE__*/_react.default.createElement(Link, null, "Our Team")), /*#__PURE__*/_react.default.createElement(LinkItem, null, /*#__PURE__*/_react.default.createElement(Link, null, "Careers")), /*#__PURE__*/_react.default.createElement(LinkItem, null, /*#__PURE__*/_react.default.createElement(Link, null, "Contact"))))), /*#__PURE__*/_react.default.createElement(SocialCol, null, /*#__PURE__*/_react.default.createElement(SocialLink, null, /*#__PURE__*/_react.default.createElement(SocialLogo, {
+    src: _iconFacebook.default
+  })), /*#__PURE__*/_react.default.createElement(SocialLink, null, /*#__PURE__*/_react.default.createElement(SocialLogo, {
+    src: _iconTwitter.default
+  })), /*#__PURE__*/_react.default.createElement(SocialLink, null, /*#__PURE__*/_react.default.createElement(SocialLogo, {
+    src: _iconPinterest.default
+  })), /*#__PURE__*/_react.default.createElement(SocialLink, null, /*#__PURE__*/_react.default.createElement(SocialLogo, {
+    src: _iconInstagram.default
+  }))))));
+}
+var FooterContainer = _styledComponents.default.footer(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  background: ", ";\n  padding: 72px 0;\n  color: ", ";\n"])), _constants.COLORS.grayishVioletBackground, _constants.COLORS.white);
+var Wrapper = _styledComponents.default.div(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n  margin: 0 auto;\n  width: 90%;\n  max-width: ", "rem;\n  display: flex;\n  align-items: flex-start;\n  justify-content: space-between;\n"])), 1110 / 16);
+var LinkHome = _styledComponents.default.a(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n  display: block;\n  width: 120px;\n"])));
+var LinksContainer = _styledComponents.default.div(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["\n  display: flex;\n  align-items: flex-start;\n  justify-content: space-between;\n  flex-basis: 730px;\n"])));
+var LinkCol = _styledComponents.default.div(_templateObject5 || (_templateObject5 = _taggedTemplateLiteral([""])));
+var LinksNav = _styledComponents.default.nav(_templateObject6 || (_templateObject6 = _taggedTemplateLiteral([""])));
+var LinksList = _styledComponents.default.ul(_templateObject7 || (_templateObject7 = _taggedTemplateLiteral(["\n  list-style: none;\n  padding: 0;\n  display: flex;\n  flex-direction: column;\n  gap: 10px;\n"])));
+var LinkItem = _styledComponents.default.li(_templateObject8 || (_templateObject8 = _taggedTemplateLiteral([""])));
+var Link = _styledComponents.default.a(_templateObject9 || (_templateObject9 = _taggedTemplateLiteral(["\n  font-size: ", "rem;\n  line-height: auto;\n  letter-spacing: -0.23px;\n  font-weight: ", ";\n  color: ", ";\n"])), 15 / 16, _constants.WEIGHTS.medium, _constants.COLORS.gray);
+var Title = _styledComponents.default.h2(_templateObject10 || (_templateObject10 = _taggedTemplateLiteral(["\n  font-size: 1rem;\n  line-height: auto;\n  letter-spacing: -0.25px;\n  font-weight: ", ";\n  color: ", ";\n  margin-bottom: ", "rem;\n"])), _constants.WEIGHTS.bold, _constants.COLORS.white, 22 / 16);
+var SocialCol = _styledComponents.default.div(_templateObject11 || (_templateObject11 = _taggedTemplateLiteral(["\n  display: flex;\n  gap: 24px;\n"])));
+var SocialLink = _styledComponents.default.a(_templateObject12 || (_templateObject12 = _taggedTemplateLiteral([""])));
+var SocialLogo = _styledComponents.default.img(_templateObject13 || (_templateObject13 = _taggedTemplateLiteral([""])));
+var _default = exports.default = Footer;
+},{"react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js","../../constants":"constants.js","../ShortlyLogo":"components/ShortlyLogo/index.js","../../images/icon-instagram.svg":"images/icon-instagram.svg","../../images/icon-pinterest.svg":"images/icon-pinterest.svg","../../images/icon-twitter.svg":"images/icon-twitter.svg","../../images/icon-facebook.svg":"images/icon-facebook.svg"}],"components/Footer/index.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+Object.defineProperty(exports, "default", {
+  enumerable: true,
+  get: function () {
+    return _Footer.default;
+  }
+});
+var _Footer = _interopRequireDefault(require("./Footer"));
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+},{"./Footer":"components/Footer/Footer.js"}],"components/App/App.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -31282,12 +31383,14 @@ var _react = _interopRequireDefault(require("react"));
 var _styledComponents = _interopRequireDefault(require("styled-components"));
 var _NavBar = _interopRequireDefault(require("../NavBar"));
 var _Hero = _interopRequireDefault(require("../Hero"));
+var _Footer = _interopRequireDefault(require("../Footer"));
 var _constants = require("../../constants");
+var _ShortlyLogo = _interopRequireDefault(require("../ShortlyLogo"));
 var _templateObject;
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 function App() {
-  return /*#__PURE__*/_react.default.createElement(Container, null, /*#__PURE__*/_react.default.createElement(_NavBar.default, null), /*#__PURE__*/_react.default.createElement("main", null, /*#__PURE__*/_react.default.createElement(_Hero.default, null), /*#__PURE__*/_react.default.createElement(SearchBar, null), /*#__PURE__*/_react.default.createElement(Features, null), /*#__PURE__*/_react.default.createElement(CallToAction, null)), /*#__PURE__*/_react.default.createElement(Footer, null));
+  return /*#__PURE__*/_react.default.createElement(Container, null, /*#__PURE__*/_react.default.createElement(_NavBar.default, null), /*#__PURE__*/_react.default.createElement("main", null, /*#__PURE__*/_react.default.createElement(_Hero.default, null), /*#__PURE__*/_react.default.createElement(SearchBar, null), /*#__PURE__*/_react.default.createElement(Features, null), /*#__PURE__*/_react.default.createElement(CallToAction, null)), /*#__PURE__*/_react.default.createElement(_Footer.default, null));
 }
 var Container = _styledComponents.default.div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  max-width: ", "rem;\n  margin: 0 auto;\n  overflow: hidden;\n"])), 1440 / 16);
 function SearchBar() {
@@ -31299,11 +31402,8 @@ function Features() {
 function CallToAction() {
   return /*#__PURE__*/_react.default.createElement("p", null, "Boost your links today", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("br", null), "Get Started");
 }
-function Footer() {
-  return /*#__PURE__*/_react.default.createElement("p", null, "Features", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("br", null), "Link Shortening", /*#__PURE__*/_react.default.createElement("br", null), "Branded Links", /*#__PURE__*/_react.default.createElement("br", null), "Analytics", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("br", null), "Resources", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("br", null), "Blog", /*#__PURE__*/_react.default.createElement("br", null), "Developers", /*#__PURE__*/_react.default.createElement("br", null), "Support", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("br", null), "Company", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("br", null), "About", /*#__PURE__*/_react.default.createElement("br", null), "Our Team", /*#__PURE__*/_react.default.createElement("br", null), "Careers", /*#__PURE__*/_react.default.createElement("br", null), "Contact", /*#__PURE__*/_react.default.createElement("br", null));
-}
 var _default = exports.default = App;
-},{"react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js","../NavBar":"components/NavBar/index.js","../Hero":"components/Hero/index.js","../../constants":"constants.js"}],"components/App/index.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js","../NavBar":"components/NavBar/index.js","../Hero":"components/Hero/index.js","../Footer":"components/Footer/index.js","../../constants":"constants.js","../ShortlyLogo":"components/ShortlyLogo/index.js"}],"components/App/index.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
