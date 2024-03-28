@@ -31307,7 +31307,54 @@ Object.defineProperty(exports, "default", {
 });
 var _Hero = _interopRequireDefault(require("./Hero"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./Hero":"components/Hero/Hero.js"}],"images/icon-instagram.svg":[function(require,module,exports) {
+},{"./Hero":"components/Hero/Hero.js"}],"images/bg-shorten-desktop.svg":[function(require,module,exports) {
+module.exports = "/bg-shorten-desktop.b98b5bc1.svg";
+},{}],"components/ShortenBar/ShortenBar.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _react = _interopRequireDefault(require("react"));
+var _styledComponents = _interopRequireDefault(require("styled-components"));
+var _constants = require("../../constants");
+var _bgShortenDesktop = _interopRequireDefault(require("../../images/bg-shorten-desktop.svg"));
+var _templateObject, _templateObject2, _templateObject3, _templateObject4, _templateObject5, _templateObject6, _templateObject7, _templateObject8, _templateObject9, _templateObject10;
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+function ShortenBar() {
+  return /*#__PURE__*/_react.default.createElement(Wrapper, null, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(FormContainer, null, /*#__PURE__*/_react.default.createElement(Form, null, /*#__PURE__*/_react.default.createElement(TextInput, {
+    type: "text",
+    placeholder: "Shorten a link here..."
+  }), /*#__PURE__*/_react.default.createElement(FormButton, null, "Shorten It!"))), /*#__PURE__*/_react.default.createElement(ResultsList, null, /*#__PURE__*/_react.default.createElement(ResultItem, null, /*#__PURE__*/_react.default.createElement(UserUrl, null, "https://www.frontendmentor.io"), /*#__PURE__*/_react.default.createElement(ResultUrl, null, "https://rel.ink/k4lKyk"), /*#__PURE__*/_react.default.createElement(ButtonResult, null, "Copy")), /*#__PURE__*/_react.default.createElement(ResultItem, null, /*#__PURE__*/_react.default.createElement(UserUrl, null, "https://www.frontendmentor.io"), /*#__PURE__*/_react.default.createElement(ResultUrl, null, "https://rel.ink/k4lKyk"), /*#__PURE__*/_react.default.createElement(ButtonResult, null, "Copy")))));
+}
+var Wrapper = _styledComponents.default.div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  margin: 0 auto;\n  width: 90%;\n  max-width: ", "rem;\n"])), 1110 / 16);
+var FormContainer = _styledComponents.default.div(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n  background-image: url(", ");\n  background-color: ", ";\n  padding: 52px 64px;\n  border-radius: 10px;\n  margin-top: -84px;\n"])), _bgShortenDesktop.default, _constants.COLORS.veryDarkViolet);
+var Form = _styledComponents.default.form(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n  display: flex;\n"])));
+var TextInput = _styledComponents.default.input(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["\n  flex: 0 1 769px;\n  border-radius: 10px;\n  padding: ", "rem ", "rem;\n  font-size: ", "rem;\n  font-weight: ", ";\n  color: ", ";\n"])), 14 / 16, 32 / 16, 20 / 16, _constants.WEIGHTS.medium, _constants.COLORS.secondaryLightGray);
+var FormButton = _styledComponents.default.button(_templateObject5 || (_templateObject5 = _taggedTemplateLiteral(["\n  flex: 1;\n  background: ", ";\n  color: ", ";\n  font-size: ", "rem;\n  font-weight: ", ";\n  /* padding: ", "rem ", "rem; */\n  border-radius: 10px;\n  border: none;\n  cursor: pointer;\n  margin-left: 24px;\n  min-height: 64px;\n"])), _constants.COLORS.cyan, _constants.COLORS.white, 20 / 16, _constants.WEIGHTS.bold, 14 / 16, 40 / 16);
+var ResultsList = _styledComponents.default.ul(_templateObject6 || (_templateObject6 = _taggedTemplateLiteral(["\n  list-style: none;\n  padding: 0;\n  margin-top: 24px;\n  display: flex;\n  flex-direction: column;\n  gap: 16px;\n"])));
+var ResultItem = _styledComponents.default.li(_templateObject7 || (_templateObject7 = _taggedTemplateLiteral(["\n  background: ", ";\n  border-radius: 5px;\n  padding: ", "rem ", "rem;\n  display: flex;\n  align-items: center;\n  gap: 24px;\n"])), _constants.COLORS.white, 18 / 16, 32 / 16);
+var UserUrl = _styledComponents.default.a(_templateObject8 || (_templateObject8 = _taggedTemplateLiteral(["\n  font-size: ", "rem;\n  line-height: ", "rem;\n  font-weight: ", ";\n  letter-spacing: 0.15px;\n  color: ", ";\n  margin-right: auto;\n"])), 20 / 16, 36 / 16, _constants.WEIGHTS.medium, _constants.COLORS.veryDarkBlue);
+var ResultUrl = _styledComponents.default.a(_templateObject9 || (_templateObject9 = _taggedTemplateLiteral(["\n  font-size: ", "rem;\n  line-height: ", "rem;\n  font-weight: ", ";\n  letter-spacing: 0.15px;\n  color: ", ";\n"])), 20 / 16, 36 / 16, _constants.WEIGHTS.medium, _constants.COLORS.cyan);
+var ButtonResult = _styledComponents.default.button(_templateObject10 || (_templateObject10 = _taggedTemplateLiteral(["\n  background: ", ";\n  color: ", ";\n  font-size: ", "rem;\n  font-weight: ", ";\n  border-radius: 5px;\n  border: none;\n  cursor: pointer;\n  min-height: 40px;\n  padding: 0 ", "rem;\n"])), _constants.COLORS.cyan, _constants.COLORS.white, 15 / 16, _constants.WEIGHTS.bold, 31 / 16);
+var _default = exports.default = ShortenBar;
+},{"react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js","../../constants":"constants.js","../../images/bg-shorten-desktop.svg":"images/bg-shorten-desktop.svg"}],"components/ShortenBar/index.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+Object.defineProperty(exports, "default", {
+  enumerable: true,
+  get: function () {
+    return _ShortenBar.default;
+  }
+});
+var _ShortenBar = _interopRequireDefault(require("./ShortenBar"));
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+},{"./ShortenBar":"components/ShortenBar/ShortenBar.js"}],"images/icon-instagram.svg":[function(require,module,exports) {
 module.exports = "/icon-instagram.55128b72.svg";
 },{}],"images/icon-pinterest.svg":[function(require,module,exports) {
 module.exports = "/icon-pinterest.6b47e241.svg";
@@ -31374,9 +31421,7 @@ Object.defineProperty(exports, "default", {
 });
 var _Footer = _interopRequireDefault(require("./Footer"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./Footer":"components/Footer/Footer.js"}],"images/bg-shorten-desktop.svg":[function(require,module,exports) {
-module.exports = "/bg-shorten-desktop.b98b5bc1.svg";
-},{}],"components/App/App.js":[function(require,module,exports) {
+},{"./Footer":"components/Footer/Footer.js"}],"components/App/App.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -31387,35 +31432,19 @@ var _react = _interopRequireDefault(require("react"));
 var _styledComponents = _interopRequireDefault(require("styled-components"));
 var _NavBar = _interopRequireDefault(require("../NavBar"));
 var _Hero = _interopRequireDefault(require("../Hero"));
+var _ShortenBar = _interopRequireDefault(require("../ShortenBar"));
 var _Footer = _interopRequireDefault(require("../Footer"));
 var _constants = require("../../constants");
 var _ShortlyLogo = _interopRequireDefault(require("../ShortlyLogo"));
-var _bgShortenDesktop = _interopRequireDefault(require("../../images/bg-shorten-desktop.svg"));
-var _templateObject, _templateObject2, _templateObject3, _templateObject4, _templateObject5, _templateObject6, _templateObject7, _templateObject8, _templateObject9, _templateObject10, _templateObject11, _templateObject12, _templateObject13;
+var _templateObject, _templateObject2, _templateObject3;
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 function App() {
-  return /*#__PURE__*/_react.default.createElement(Container, null, /*#__PURE__*/_react.default.createElement(_NavBar.default, null), /*#__PURE__*/_react.default.createElement(Main, null, /*#__PURE__*/_react.default.createElement(HeroWrapper, null, /*#__PURE__*/_react.default.createElement(_Hero.default, null)), /*#__PURE__*/_react.default.createElement(ShortenBar, null), /*#__PURE__*/_react.default.createElement(Features, null), /*#__PURE__*/_react.default.createElement(CallToAction, null)), /*#__PURE__*/_react.default.createElement(_Footer.default, null));
+  return /*#__PURE__*/_react.default.createElement(Container, null, /*#__PURE__*/_react.default.createElement(_NavBar.default, null), /*#__PURE__*/_react.default.createElement(Main, null, /*#__PURE__*/_react.default.createElement(HeroWrapper, null, /*#__PURE__*/_react.default.createElement(_Hero.default, null)), /*#__PURE__*/_react.default.createElement(_ShortenBar.default, null), /*#__PURE__*/_react.default.createElement(Features, null), /*#__PURE__*/_react.default.createElement(CallToAction, null)), /*#__PURE__*/_react.default.createElement(_Footer.default, null));
 }
 var Container = _styledComponents.default.div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  max-width: ", "rem;\n  margin: 0 auto;\n  overflow: hidden;\n"])), 1440 / 16);
 var Main = _styledComponents.default.main(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n  background: ", ";\n"])), _constants.COLORS.lightGray);
 var HeroWrapper = _styledComponents.default.div(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n  background: ", ";\n"])), _constants.COLORS.white);
-function ShortenBar() {
-  return /*#__PURE__*/_react.default.createElement(Wrapper, null, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(FormContainer, null, /*#__PURE__*/_react.default.createElement(Form, null, /*#__PURE__*/_react.default.createElement(TextInput, {
-    type: "text",
-    placeholder: "Shorten a link here..."
-  }), /*#__PURE__*/_react.default.createElement(FormButton, null, "Shorten It!"))), /*#__PURE__*/_react.default.createElement(ResultsList, null, /*#__PURE__*/_react.default.createElement(ResultItem, null, /*#__PURE__*/_react.default.createElement(UserUrl, null, "https://www.frontendmentor.io"), /*#__PURE__*/_react.default.createElement(ResultUrl, null, "https://rel.ink/k4lKyk"), /*#__PURE__*/_react.default.createElement(ButtonResult, null, "Copy")), /*#__PURE__*/_react.default.createElement(ResultItem, null, /*#__PURE__*/_react.default.createElement(UserUrl, null, "https://www.frontendmentor.io"), /*#__PURE__*/_react.default.createElement(ResultUrl, null, "https://rel.ink/k4lKyk"), /*#__PURE__*/_react.default.createElement(ButtonResult, null, "Copy")))));
-}
-var Wrapper = _styledComponents.default.div(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["\n  margin: 0 auto;\n  width: 90%;\n  max-width: ", "rem;\n"])), 1110 / 16);
-var FormContainer = _styledComponents.default.div(_templateObject5 || (_templateObject5 = _taggedTemplateLiteral(["\n  background-image: url(", ");\n  background-color: ", ";\n  padding: 52px 64px;\n  border-radius: 10px;\n  margin-top: -84px;\n"])), _bgShortenDesktop.default, _constants.COLORS.veryDarkViolet);
-var Form = _styledComponents.default.form(_templateObject6 || (_templateObject6 = _taggedTemplateLiteral(["\n  display: flex;\n"])));
-var TextInput = _styledComponents.default.input(_templateObject7 || (_templateObject7 = _taggedTemplateLiteral(["\n  flex: 0 1 769px;\n  border-radius: 10px;\n  padding: ", "rem ", "rem;\n  font-size: ", "rem;\n  font-weight: ", ";\n  color: ", ";\n"])), 14 / 16, 32 / 16, 20 / 16, _constants.WEIGHTS.medium, _constants.COLORS.secondaryLightGray);
-var FormButton = _styledComponents.default.button(_templateObject8 || (_templateObject8 = _taggedTemplateLiteral(["\n  flex: 1;\n  background: ", ";\n  color: ", ";\n  font-size: ", "rem;\n  font-weight: ", ";\n  /* padding: ", "rem ", "rem; */\n  border-radius: 10px;\n  border: none;\n  cursor: pointer;\n  margin-left: 24px;\n  min-height: 64px;\n"])), _constants.COLORS.cyan, _constants.COLORS.white, 20 / 16, _constants.WEIGHTS.bold, 14 / 16, 40 / 16);
-var ResultsList = _styledComponents.default.ul(_templateObject9 || (_templateObject9 = _taggedTemplateLiteral(["\n  list-style: none;\n  padding: 0;\n  margin-top: 24px;\n  display: flex;\n  flex-direction: column;\n  gap: 16px;\n"])));
-var ResultItem = _styledComponents.default.li(_templateObject10 || (_templateObject10 = _taggedTemplateLiteral(["\n  background: ", ";\n  border-radius: 5px;\n  padding: ", "rem ", "rem;\n  display: flex;\n  align-items: center;\n  gap: 24px;\n"])), _constants.COLORS.white, 18 / 16, 32 / 16);
-var UserUrl = _styledComponents.default.a(_templateObject11 || (_templateObject11 = _taggedTemplateLiteral(["\n  font-size: ", "rem;\n  line-height: ", "rem;\n  font-weight: ", ";\n  letter-spacing: 0.15px;\n  color: ", ";\n  margin-right: auto;\n"])), 20 / 16, 36 / 16, _constants.WEIGHTS.medium, _constants.COLORS.veryDarkBlue);
-var ResultUrl = _styledComponents.default.a(_templateObject12 || (_templateObject12 = _taggedTemplateLiteral(["\n  font-size: ", "rem;\n  line-height: ", "rem;\n  font-weight: ", ";\n  letter-spacing: 0.15px;\n  color: ", ";\n"])), 20 / 16, 36 / 16, _constants.WEIGHTS.medium, _constants.COLORS.cyan);
-var ButtonResult = _styledComponents.default.button(_templateObject13 || (_templateObject13 = _taggedTemplateLiteral(["\n  background: ", ";\n  color: ", ";\n  font-size: ", "rem;\n  font-weight: ", ";\n  border-radius: 5px;\n  border: none;\n  cursor: pointer;\n  min-height: 40px;\n  padding: 0 ", "rem;\n"])), _constants.COLORS.cyan, _constants.COLORS.white, 15 / 16, _constants.WEIGHTS.bold, 31 / 16);
 function Features() {
   return /*#__PURE__*/_react.default.createElement("p", null, "Advanced Statistics", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("br", null), "Track how your links are performing across the web with our", /*#__PURE__*/_react.default.createElement("br", null), "advanced statistics dashboard.", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("br", null), "Brand Recognition", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("br", null), "Boost your brand recognition with each click. Generic links don\u2019t", /*#__PURE__*/_react.default.createElement("br", null), "mean a thing. Branded links help instil confidence in your content.", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("br", null), "Detailed Records", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("br", null), "Gain insights into who is clicking your links. Knowing when and where", /*#__PURE__*/_react.default.createElement("br", null), "people engage with your content helps inform better decisions.", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("br", null), "Fully Customizable", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("br", null), "Improve brand awareness and content discoverability through customizable", /*#__PURE__*/_react.default.createElement("br", null), "links, supercharging audience engagement.");
 }
@@ -31423,7 +31452,7 @@ function CallToAction() {
   return /*#__PURE__*/_react.default.createElement("p", null, "Boost your links today", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("br", null), "Get Started");
 }
 var _default = exports.default = App;
-},{"react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js","../NavBar":"components/NavBar/index.js","../Hero":"components/Hero/index.js","../Footer":"components/Footer/index.js","../../constants":"constants.js","../ShortlyLogo":"components/ShortlyLogo/index.js","../../images/bg-shorten-desktop.svg":"images/bg-shorten-desktop.svg"}],"components/App/index.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js","../NavBar":"components/NavBar/index.js","../Hero":"components/Hero/index.js","../ShortenBar":"components/ShortenBar/index.js","../Footer":"components/Footer/index.js","../../constants":"constants.js","../ShortlyLogo":"components/ShortlyLogo/index.js"}],"components/App/index.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
