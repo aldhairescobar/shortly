@@ -31354,7 +31354,63 @@ Object.defineProperty(exports, "default", {
 });
 var _ShortenBar = _interopRequireDefault(require("./ShortenBar"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./ShortenBar":"components/ShortenBar/ShortenBar.js"}],"images/icon-instagram.svg":[function(require,module,exports) {
+},{"./ShortenBar":"components/ShortenBar/ShortenBar.js"}],"images/icon-brand-recognition.svg":[function(require,module,exports) {
+module.exports = "/icon-brand-recognition.7bb6fc9d.svg";
+},{}],"images/icon-detailed-records.svg":[function(require,module,exports) {
+module.exports = "/icon-detailed-records.799acd19.svg";
+},{}],"images/icon-fully-customizable.svg":[function(require,module,exports) {
+module.exports = "/icon-fully-customizable.0f1572b6.svg";
+},{}],"components/Statistics/Statistics.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _react = _interopRequireDefault(require("react"));
+var _styledComponents = _interopRequireDefault(require("styled-components"));
+var _constants = require("../../constants");
+var _iconBrandRecognition = _interopRequireDefault(require("../../images/icon-brand-recognition.svg"));
+var _iconDetailedRecords = _interopRequireDefault(require("../../images/icon-detailed-records.svg"));
+var _iconFullyCustomizable = _interopRequireDefault(require("../../images/icon-fully-customizable.svg"));
+var _templateObject, _templateObject2, _templateObject3, _templateObject4, _templateObject5, _templateObject6, _templateObject7, _templateObject8, _templateObject9, _templateObject10;
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+function Statistics() {
+  return /*#__PURE__*/_react.default.createElement(Wrapper, null, /*#__PURE__*/_react.default.createElement(Title, null, "Advanced Statistics"), /*#__PURE__*/_react.default.createElement(Description, null, "Track how your links are performing across the web with our ", /*#__PURE__*/_react.default.createElement("br", null), " ", "advanced statistics dashboard."), /*#__PURE__*/_react.default.createElement(CardsContainer, null, /*#__PURE__*/_react.default.createElement(AccentLine, null), /*#__PURE__*/_react.default.createElement(Card, null, /*#__PURE__*/_react.default.createElement(CardImgContainer, null, /*#__PURE__*/_react.default.createElement(CardImg, {
+    src: _iconBrandRecognition.default
+  })), /*#__PURE__*/_react.default.createElement(CardTitle, null, "Brand Recognition"), /*#__PURE__*/_react.default.createElement(CardDescription, null, "Boost your brand recognition with each click. Generic links don\u2019t", " ", /*#__PURE__*/_react.default.createElement("br", null), " mean a thing. Branded links help instil confidence in your content.")), /*#__PURE__*/_react.default.createElement(Card, null, /*#__PURE__*/_react.default.createElement(CardImgContainer, null, /*#__PURE__*/_react.default.createElement(CardImg, {
+    src: _iconDetailedRecords.default
+  })), /*#__PURE__*/_react.default.createElement(CardTitle, null, "Detailed Records"), /*#__PURE__*/_react.default.createElement(CardDescription, null, "Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.")), /*#__PURE__*/_react.default.createElement(Card, null, /*#__PURE__*/_react.default.createElement(CardImgContainer, null, /*#__PURE__*/_react.default.createElement(CardImg, {
+    src: _iconFullyCustomizable.default
+  })), /*#__PURE__*/_react.default.createElement(CardTitle, null, "Fully Customizable"), /*#__PURE__*/_react.default.createElement(CardDescription, null, "Improve brand awareness and content discoverability through customizable links, supercharging audience engagement."))));
+}
+var Wrapper = _styledComponents.default.div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  margin: 120px auto 0;\n  width: 90%;\n  max-width: ", "rem;\n"])), 1110 / 16);
+var AccentLine = _styledComponents.default.div(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n  position: absolute;\n  right: 0;\n  left: 0;\n  bottom: 50%;\n  height: 8px;\n  background: ", ";\n"])), _constants.COLORS.cyan);
+var Title = _styledComponents.default.h2(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n  text-align: center;\n  font-size: ", "rem;\n  line-height: ", "rem;\n  letter-spacing: -1px;\n  font-weight: ", ";\n  color: ", ";\n  margin-bottom: ", "rem;\n"])), 40 / 16, 48 / 16, _constants.WEIGHTS.bold, _constants.COLORS.veryDarkBlue, 18 / 16);
+var Description = _styledComponents.default.p(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["\n  text-align: center;\n  font-size: ", "rem;\n  line-height: ", "rem;\n  letter-spacing: 0.12px;\n  font-weight: ", ";\n  color: ", ";\n  margin-bottom: ", "rem;\n"])), 18 / 16, 32 / 16, _constants.WEIGHTS.medium, _constants.COLORS.grayishViolet, 56 / 16);
+var CardsContainer = _styledComponents.default.div(_templateObject5 || (_templateObject5 = _taggedTemplateLiteral(["\n  min-height: ", "rem;\n  display: flex;\n  justify-content: space-between;\n  align-items: flex-start;\n  padding-top: 44px;\n  position: relative;\n"])), 400 / 16);
+var Card = _styledComponents.default.div(_templateObject6 || (_templateObject6 = _taggedTemplateLiteral(["\n  padding: 77px 32px 41px;\n  background: ", ";\n  width: ", "rem;\n  position: relative;\n\n  &:nth-of-type(2) {\n    align-self: flex-start;\n  }\n\n  &:nth-of-type(3) {\n    align-self: center;\n  }\n\n  &:nth-of-type(4) {\n    align-self: flex-end;\n  }\n"])), _constants.COLORS.white, 350 / 16);
+var CardImgContainer = _styledComponents.default.div(_templateObject7 || (_templateObject7 = _taggedTemplateLiteral(["\n  background: ", ";\n  width: 88px;\n  height: 88px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  border-radius: 50%;\n  position: absolute;\n  top: -44px;\n"])), _constants.COLORS.veryDarkViolet);
+var CardImg = _styledComponents.default.img(_templateObject8 || (_templateObject8 = _taggedTemplateLiteral([""])));
+var CardTitle = _styledComponents.default.h3(_templateObject9 || (_templateObject9 = _taggedTemplateLiteral(["\n  font-size: ", "rem;\n  font-weight: ", ";\n  color: ", ";\n  margin-bottom: ", "rem;\n"])), 22 / 16, _constants.WEIGHTS.bold, _constants.COLORS.veryDarkBlue, 12 / 16);
+var CardDescription = _styledComponents.default.p(_templateObject10 || (_templateObject10 = _taggedTemplateLiteral(["\n  font-size: ", "rem;\n  line-height: ", "rem;\n  font-weight: ", ";\n  color: ", ";\n"])), 15 / 16, 26 / 16, _constants.WEIGHTS.medium, _constants.COLORS.grayishViolet);
+var _default = exports.default = Statistics;
+},{"react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js","../../constants":"constants.js","../../images/icon-brand-recognition.svg":"images/icon-brand-recognition.svg","../../images/icon-detailed-records.svg":"images/icon-detailed-records.svg","../../images/icon-fully-customizable.svg":"images/icon-fully-customizable.svg"}],"components/Statistics/index.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+Object.defineProperty(exports, "default", {
+  enumerable: true,
+  get: function () {
+    return _Statistics.default;
+  }
+});
+var _Statistics = _interopRequireDefault(require("./Statistics"));
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+},{"./Statistics":"components/Statistics/Statistics.js"}],"images/icon-instagram.svg":[function(require,module,exports) {
 module.exports = "/icon-instagram.55128b72.svg";
 },{}],"images/icon-pinterest.svg":[function(require,module,exports) {
 module.exports = "/icon-pinterest.6b47e241.svg";
@@ -31433,26 +31489,23 @@ var _styledComponents = _interopRequireDefault(require("styled-components"));
 var _NavBar = _interopRequireDefault(require("../NavBar"));
 var _Hero = _interopRequireDefault(require("../Hero"));
 var _ShortenBar = _interopRequireDefault(require("../ShortenBar"));
+var _Statistics = _interopRequireDefault(require("../Statistics"));
 var _Footer = _interopRequireDefault(require("../Footer"));
 var _constants = require("../../constants");
-var _ShortlyLogo = _interopRequireDefault(require("../ShortlyLogo"));
 var _templateObject, _templateObject2, _templateObject3;
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 function App() {
-  return /*#__PURE__*/_react.default.createElement(Container, null, /*#__PURE__*/_react.default.createElement(_NavBar.default, null), /*#__PURE__*/_react.default.createElement(Main, null, /*#__PURE__*/_react.default.createElement(HeroWrapper, null, /*#__PURE__*/_react.default.createElement(_Hero.default, null)), /*#__PURE__*/_react.default.createElement(_ShortenBar.default, null), /*#__PURE__*/_react.default.createElement(Features, null), /*#__PURE__*/_react.default.createElement(CallToAction, null)), /*#__PURE__*/_react.default.createElement(_Footer.default, null));
+  return /*#__PURE__*/_react.default.createElement(Container, null, /*#__PURE__*/_react.default.createElement(_NavBar.default, null), /*#__PURE__*/_react.default.createElement(Main, null, /*#__PURE__*/_react.default.createElement(HeroWrapper, null, /*#__PURE__*/_react.default.createElement(_Hero.default, null)), /*#__PURE__*/_react.default.createElement(_ShortenBar.default, null), /*#__PURE__*/_react.default.createElement(_Statistics.default, null), /*#__PURE__*/_react.default.createElement(CallToAction, null)), /*#__PURE__*/_react.default.createElement(_Footer.default, null));
 }
 var Container = _styledComponents.default.div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  max-width: ", "rem;\n  margin: 0 auto;\n  overflow: hidden;\n"])), 1440 / 16);
 var Main = _styledComponents.default.main(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n  background: ", ";\n"])), _constants.COLORS.lightGray);
 var HeroWrapper = _styledComponents.default.div(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n  background: ", ";\n"])), _constants.COLORS.white);
-function Features() {
-  return /*#__PURE__*/_react.default.createElement("p", null, "Advanced Statistics", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("br", null), "Track how your links are performing across the web with our", /*#__PURE__*/_react.default.createElement("br", null), "advanced statistics dashboard.", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("br", null), "Brand Recognition", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("br", null), "Boost your brand recognition with each click. Generic links don\u2019t", /*#__PURE__*/_react.default.createElement("br", null), "mean a thing. Branded links help instil confidence in your content.", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("br", null), "Detailed Records", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("br", null), "Gain insights into who is clicking your links. Knowing when and where", /*#__PURE__*/_react.default.createElement("br", null), "people engage with your content helps inform better decisions.", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("br", null), "Fully Customizable", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("br", null), "Improve brand awareness and content discoverability through customizable", /*#__PURE__*/_react.default.createElement("br", null), "links, supercharging audience engagement.");
-}
 function CallToAction() {
   return /*#__PURE__*/_react.default.createElement("p", null, "Boost your links today", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("br", null), "Get Started");
 }
 var _default = exports.default = App;
-},{"react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js","../NavBar":"components/NavBar/index.js","../Hero":"components/Hero/index.js","../ShortenBar":"components/ShortenBar/index.js","../Footer":"components/Footer/index.js","../../constants":"constants.js","../ShortlyLogo":"components/ShortlyLogo/index.js"}],"components/App/index.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js","../NavBar":"components/NavBar/index.js","../Hero":"components/Hero/index.js","../ShortenBar":"components/ShortenBar/index.js","../Statistics":"components/Statistics/index.js","../Footer":"components/Footer/index.js","../../constants":"constants.js"}],"components/App/index.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
