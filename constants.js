@@ -20,6 +20,8 @@ export const COLORS = {
   veryDarkViolet: "hsl(257, 27%, 26%)",
   veryDarkBlue: "hsl(257, 11%, 21%)",
   veryDarkVioletLogo: "hsl(255, 11%, 22%)",
+  /* Figma Template */
+  secondaryLightGray: "hsl(250, 3%, 61%)",
 
   red: "hsl(0, 87%, 67%)",
   gray: "hsl(0, 0%, 75%)",

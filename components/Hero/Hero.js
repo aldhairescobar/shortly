@@ -25,6 +25,7 @@ const Wrapper = styled.div`
   max-width: ${1110 / 16}rem;
   display: flex;
   align-items: center;
+  padding-bottom: 152px;
 `;
 
 const Intro = styled.div`
